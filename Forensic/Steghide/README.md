@@ -1,25 +1,20 @@
 # 🕵️‍♂️ ExifTool Steganography Demo – OSINT Walkthrough
 
-## 📌 Introduction
+This repository contains a simple yet powerful demonstration of how to hide and extract secret messages from JPEG images using `exiftool` on Kali Linux. The technique is useful in OSINT investigations, CTF challenges, and digital forensics.
 
-Steganography is the practice of hiding information within other non-secret data. In this demo, we use `exiftool` on Kali Linux to embed a secret message inside a JPEG image’s metadata and retrieve it later. This technique is often used in OSINT investigations, CTF challenges, and digital forensics.
+## 📄 Demo PDF
 
----
+## 🛠️ Tools Used
+- Kali Linux
+- `exiftool`
 
-## 🛠️ Tools Required
+## 🧪 What You'll Learn
+- How to embed a hidden message in an image
+- How to extract metadata using `exiftool`
+- How steganography can be used in real-world investigations
 
-- Kali Linux (or any Linux distro with `exiftool`)
-- A JPEG image
-- Terminal access
-
----
-
-## 🧪 Step-by-Step Demo
-
-### 🔹 Step 1: Embed a Secret Message
-
-Use `exiftool` to insert a comment into the image metadata:
-
+## 📸 Sample Command
 ```bash
 exiftool -comment='I janji I ada you sorang je' github.com.jpg
+exiftool -v github.com.jpg
 
