@@ -41,6 +41,13 @@ Example output:
 
 [!!] VULNERABLE BANNER: "SSH-2.0-OpenSSH_5.3p1 Debian-3ubuntu7.1" ON PORT: 22
 
+Notes
+These banners are based on real vulnerable versions with known exploits (e.g. CVE-2015-5600 for OpenSSH, CVE-2014-0160 for OpenSSL).
+
+You can expand this list by scraping from Exploit-DB or using searchsploit.
+
+For deeper matching, consider normalizing banners (e.g. lowercase, strip version numbers) or using regex.
+
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
