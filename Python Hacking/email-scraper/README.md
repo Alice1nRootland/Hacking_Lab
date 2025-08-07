@@ -10,7 +10,12 @@ A Python tool that crawls websites and extracts email addresses using regex and 
 - Banner header for clarity
 
 ## 🛠️ Setup
+requirements to use the python code
 
+- pip3 install requests
+- pip3 install bs4
+- pip install lxml
+  
 💻 Usage
 bash
 python3 email_scraper.py
