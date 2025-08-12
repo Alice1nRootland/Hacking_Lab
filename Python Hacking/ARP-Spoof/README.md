@@ -7,13 +7,6 @@ This repository contains a beginner-friendly educational overview and demonstrat
 - Instructions for setup and testing
 - Guidance for ethical use
 
-## 📄 Contents
-
-- `report.md`: Formal educational writeup
-- `arpspoofer.py`: ARP spoofing script
-- `malarp.py`: ARP table inspection script
-- `assets/`: Optional screenshots or diagrams
-
 ## 🛠️ Requirements
 
 - Python 3
