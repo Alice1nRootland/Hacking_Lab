@@ -23,3 +23,4 @@ This project demonstrates a simple Python-based keylogger for educational and et
 
 ```bash
 pip install pynput
+python3 keylogger.py
