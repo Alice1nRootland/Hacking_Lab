@@ -28,7 +28,7 @@ Emails are printed after end of process
 This tool is for educational purposes only. Do not use it on websites without permission.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/email-scraper.git
+git clone https://github.com/Alice1nRootland/email-scraper.git
 cd email-scraper
 pip install -r requirements.txt
 python3 email_scraper.py
