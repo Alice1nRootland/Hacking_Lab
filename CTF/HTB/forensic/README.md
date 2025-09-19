@@ -1,25 +1,6 @@
-# 🧠 Reminiscent – Memory Forensics CTF Writeup
+# 🔍 HTB Forensics Writeups
 
-**Challenge:** Reminiscent  
-**Platform:** Hack The Box (HTB)  
-**Category:** Memory Forensics  
-**Author:** Faez  
-**Flag:** `HTB{$_j0G_y0uR_M3m0rY_$}`
+This repository contains my personal writeups for **Hack The Box Forensics challenges**.  
+Each writeup is focused on **step-by-step analysis**, with commands, explanations, and screenshots where possible.  
 
----
-
-## 🧩 Challenge Overview
-
-This challenge simulates a real-world fileless malware attack triggered by a malicious email. We were provided with a Windows memory dump and a suspicious `.eml` file. The goal was to analyze the memory, trace the infection chain, decode the payload, and extract the flag.
-
----
-
-## 🗂️ Files Provided
-
-- `flounder-pc-memdump.elf` – Memory dump of the target machine  
-- `imageinfo.txt` – Suggested Volatility profiles  
-- `Resume.eml` – Suspicious email attachment
-
-
-
-
+⚠️ Disclaimer: These writeups are for **educational purposes only**. Do not use the techniques described here on systems you do not own or have explicit permission to test.
