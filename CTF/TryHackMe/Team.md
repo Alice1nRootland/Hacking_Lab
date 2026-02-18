@@ -4,9 +4,11 @@
 First, we check if the target is alive.
 ping -c 3 10.48.132.237
 <img width="797" height="182" alt="image" src="https://github.com/user-attachments/assets/86f8aa12-6638-4b16-be5d-db0bd6b4918f" />
+
 Then scan open ports.
 nmap -sC -sV -oN scan.txt 10.48.132.237
 <img width="1150" height="352" alt="image" src="https://github.com/user-attachments/assets/5c48789e-9489-421f-8370-843684f3a681" />
+
 This shows SSH and HTTP are available.
 
 **What to expect:**
