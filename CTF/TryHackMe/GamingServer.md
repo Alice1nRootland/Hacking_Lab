@@ -1,3 +1,6 @@
+<img width="1910" height="311" alt="image" src="https://github.com/user-attachments/assets/9d3c62a2-5162-46fd-9471-b67a01e399c7" />
+GamingServer is Boot2root box for beginner 
+
 ### 1. Port Scanning
 
 Started with a full port scan:
@@ -6,7 +9,7 @@ Started with a full port scan:
 nmap -sV 10.48.147.5
 ```
 
-![image.png](attachment:00238c55-794d-4067-a8aa-be2503184f0e:image.png)
+<img width="958" height="226" alt="image" src="https://github.com/user-attachments/assets/9c09e8a5-67dc-4705-a422-05cb820dd2b8" />
 
 Output (relevant ports):
 
@@ -25,7 +28,7 @@ Check the homepage:
 curl http://10.48.147.5:80
 ```
 
-![image.png](attachment:032cbeb0-6e3f-4ecd-a9ec-a4c65eddafe1:image.png)
+<img width="1103" height="653" alt="image" src="https://github.com/user-attachments/assets/8f034416-bcf4-484c-9403-5b6728b89355" />
 
 Basic HTML template found. Then, use **gobuster** to discover directories:
 
@@ -33,7 +36,7 @@ Basic HTML template found. Then, use **gobuster** to discover directories:
 gobuster dir-u http://10.48.147.5-w /usr/share/wordlists/dirb/common.txt
 ```
 
-![image.png](attachment:ae8dd259-dd05-4fbc-b50e-9be1483dd921:image.png)
+<img width="1109" height="461" alt="image" src="https://github.com/user-attachments/assets/90dc64d6-a66b-4fb3-97a5-2b01c92bfe35" />
 
 Discovered directories:
 
@@ -48,7 +51,7 @@ Check robots.txt:
 curl http://10.48.147.5/robots.txt
 ```
 
-![image.png](attachment:639eddbe-69f6-4565-a72f-82a94aba7336:image.png)
+<img width="1107" height="102" alt="image" src="https://github.com/user-attachments/assets/886c0901-21ca-4cd9-a465-50e00fe3ce85" />
 
 ### 3. File Enumeration & Download
 
@@ -58,7 +61,7 @@ curl http://10.48.147.5/robots.txt
 curl http://10.48.147.5/secret/
 ```
 
-![image.png](attachment:5d871f6e-0572-47a5-bdd8-2025c00a29be:image.png)
+<img width="1108" height="370" alt="image" src="https://github.com/user-attachments/assets/6dd57bd3-dc7d-4166-aad9-66d5584b6186" />
 
 Found:
 
@@ -72,7 +75,7 @@ secretKey
 curl http://10.48.147.5/uploads/
 ```
 
-![image.png](attachment:6c67a82d-89b2-4758-8939-0a6e46fe0c12:image.png)
+<img width="1111" height="432" alt="image" src="https://github.com/user-attachments/assets/ca581f04-d87a-40e0-80d4-eb29ceb9b095" />
 
 Found:
 
@@ -91,7 +94,7 @@ wget http://10.48.147.5/uploads/manifesto.txt
 wget http://10.48.147.5/uploads/meme.jpg
 ```
 
-![image.png](attachment:f5d75bb2-415b-4491-b661-0f9a885d7683:image.png)
+<img width="1104" height="634" alt="image" src="https://github.com/user-attachments/assets/d403ca43-4592-41fb-9cc2-09415ef44396" />
 
 ### 4. Cracking the SSH Private Key
 
@@ -101,7 +104,7 @@ The file `secretKey` was an **encrypted RSA private key**. Use `ssh2john` to con
 ssh2john secretKey > key.hash
 ```
 
-![image.png](attachment:d5a9b159-4dcd-4dc5-a349-55e95a32e275:image.png)
+<img width="1111" height="447" alt="image" src="https://github.com/user-attachments/assets/b5276533-006f-4951-8611-8c64231268ae" />
 
 Use the downloaded dictionary (`dict.lst`) to brute-force the passphrase:
 
@@ -109,7 +112,7 @@ Use the downloaded dictionary (`dict.lst`) to brute-force the passphrase:
 john--wordlist=dict.lst key.hash
 ```
 
-![image.png](attachment:5c957c00-9d92-450b-8552-c34607f9e8e1:image.png)
+<img width="1110" height="224" alt="image" src="https://github.com/user-attachments/assets/cd1e9373-7fc4-462d-89fa-7e305521aea3" />
 
 Check cracked password:
 
@@ -117,7 +120,7 @@ Check cracked password:
 john--show key.hash
 ```
 
-![image.png](attachment:a2ebfb1c-d102-4b17-b5cd-7ce8f5cc83c1:image.png)
+<img width="1105" height="94" alt="image" src="https://github.com/user-attachments/assets/610772e7-fb8c-4b1b-bb78-49071b5f21a5" />
 
 ### 5. SSH Login as User
 
@@ -127,7 +130,7 @@ Set proper permissions for the key:
 chmod600 secretKey
 ```
 
-![image.png](attachment:9e755e45-631b-41c3-ad4c-e216a0078a29:image.png)
+<img width="1110" height="540" alt="image" src="https://github.com/user-attachments/assets/14d8a212-7832-4926-b85c-1b7c1e1e4c57" />
 
 Login:
 
@@ -153,7 +156,7 @@ ls
 
 Found `user.txt`. Read it:
 
-![image.png](attachment:7e61ee0a-4f94-4e70-81e5-355251001faa:image.png)
+<img width="1114" height="90" alt="image" src="https://github.com/user-attachments/assets/24c3aaeb-5cb9-40d8-a51a-109d18b98d35" />
 
 ```
 cat user.txt
