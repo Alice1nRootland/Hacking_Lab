@@ -9,7 +9,7 @@ bash
 
 `nmap -sS -p- 10.129.91.223`
 
-![image.png](attachment:7878f583-2010-429f-82e2-5ba7a0840b63:image.png)
+<img width="831" height="243" alt="image" src="https://github.com/user-attachments/assets/8dc6c27d-b289-42a2-a209-e1ccd182a9b9" />
 
 answer is `3`
 
@@ -24,7 +24,7 @@ bash
 
 `nmap --script vuln -p 443 10.129.91.223`
 
-![image.png](attachment:d7f24d31-3af8-4490-8ec3-5edb5d55542d:image.png)
+<img width="826" height="659" alt="image" src="https://github.com/user-attachments/assets/7f8c8069-7f8a-4e41-a562-459f2a21f1b6" />
 
 ### 📖 Explanation:
 
@@ -34,7 +34,7 @@ bash
 > What is the 2014 CVE ID for an information disclosure vulnerability that the service on port 443 is vulnerable to?
 > 
 
-![image.png](attachment:d7e575cb-0847-4ba0-b8af-6997d7796a92:image.png)
+<img width="817" height="473" alt="image" src="https://github.com/user-attachments/assets/5feabb61-e144-4977-98ee-d227830dd5da" />
 
 `CVE-2014-0160` is the answer 
 
@@ -51,17 +51,17 @@ cd heartbleed-PoC`
 
 `python2 [heartbleed-exploit.py](http://heartbleed-exploit.py/) 10.129.91.223 443`
 
-![image.png](attachment:d77ebf25-4baa-4956-9d86-2c1679392dd2:image.png)
+<img width="813" height="247" alt="image" src="https://github.com/user-attachments/assets/06604437-a366-41ca-a109-e0a1f42de510" />
 
-![image.png](attachment:76121c37-6035-4e25-9502-4093731a8b9b:image.png)
+<img width="823" height="582" alt="image" src="https://github.com/user-attachments/assets/31831f3e-1cc6-43bd-b194-54b317f8faa4" />
 
 then i read as strings and found the encryption of b64
 
-![image.png](attachment:8945a4e0-ce63-4c81-8fe9-fb8a1cc711d1:image.png)
+<img width="813" height="118" alt="image" src="https://github.com/user-attachments/assets/438f6977-9023-47c1-8457-01d0af41d353" />
 
 grab the encryption and decode it, we got the password
 
-![image.png](attachment:4eada459-e1da-4986-8658-e7b6a379b8e6:image.png)
+<img width="816" height="83" alt="image" src="https://github.com/user-attachments/assets/45681695-7dd8-47eb-8c8e-bd4402d9ed71" />
 
 `heartbleedbelievethehype`
 
@@ -70,11 +70,11 @@ grab the encryption and decode it, we got the password
 
 I use gobuster tool to discover 
 
-![image.png](attachment:4aa9eca1-c4df-4ce5-a454-a66d3cf37462:image.png)
+<img width="817" height="689" alt="image" src="https://github.com/user-attachments/assets/3ce39a25-3f7f-4804-aba3-0e5955e37857" />
 
 Click the link and you will find the note.txt
 
-![image.png](attachment:d25c831a-0985-495f-8af0-de7779bc46f3:image.png)
+<img width="1495" height="255" alt="image" src="https://github.com/user-attachments/assets/ba59da40-9cb1-4153-b6c0-27d90598d336" />
 
 so the answer is 
 
@@ -87,7 +87,7 @@ so the answer is
 
 Click the hype_key file name
 
-![image.png](attachment:ba30d923-03b0-4eb5-bf89-1d3ba5c56173:image.png)
+<img width="1497" height="498" alt="image" src="https://github.com/user-attachments/assets/706be9d8-6399-4327-9462-63c32e325efd" />
 
 `hype_key` is the answer 
 
@@ -121,11 +121,11 @@ bash
 
 This forces your client to offer the older `ssh-rsa` algorithm, which OpenSSH 5.9 understands.
 
-![image.png](attachment:febb78c2-268e-478a-bf10-6141363ce58e:image.png)
+<img width="826" height="641" alt="image" src="https://github.com/user-attachments/assets/c6516e9b-e001-4f35-9530-496072bbdaed" />
 
 I use quite hard way hahah 
 
-![image.png](attachment:92f26df7-50f0-4a99-88c8-e0c8a8489ad2:image.png)
+<img width="847" height="39" alt="image" src="https://github.com/user-attachments/assets/5f40835e-d449-4987-9657-6da8a4c20981" />
 
 then you find the flag
 
@@ -134,9 +134,9 @@ then you find the flag
 
 This `ps aux` output shows all running processes on the system
 
-![image.png](attachment:14e25847-7571-49a1-8c2f-b9e9227138c8:image.png)
+<img width="792" height="665" alt="image" src="https://github.com/user-attachments/assets/26b725e1-af56-40d9-a41a-b2f296124515" />
 
-![image.png](attachment:a99b6915-9e87-4710-97a8-5739277bae18:image.png)
+<img width="845" height="15" alt="image" src="https://github.com/user-attachments/assets/5fc84b61-b382-480b-8fec-d2f292114073" />
 
 That was the **root-owned tmux session** using a custom socket
 
@@ -148,6 +148,6 @@ bash
 
 That gave you a **root shell**—a perfect example of privilege escalation via **session hijacking**.
 
-![image.png](attachment:bc217917-ce1a-4971-aab9-42587c7b1172:image.png)
+<img width="814" height="294" alt="image" src="https://github.com/user-attachments/assets/0b86ac11-01bc-42e8-b346-0319bf4a5efa" />
 
 found the root flag!
