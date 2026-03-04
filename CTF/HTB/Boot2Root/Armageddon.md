@@ -1,4 +1,6 @@
 <img width="702" height="640" alt="image" src="https://github.com/user-attachments/assets/37e8ed7d-8425-48aa-ae74-d5a0f66ab085" />
+
+
 # Armageddon Writeup: User & Root Flag via Snap Exploitation Guided Mode
 
 We exploited a misconfigured `sudo` rule that allowed passwordless execution of `snap install` as root. By crafting a malicious Snap package using `fpm`, we injected a new rule into `/etc/sudoers`, granting full root access to the `brucetherealadmin` user. This allowed us to capture both the user and root flags.
