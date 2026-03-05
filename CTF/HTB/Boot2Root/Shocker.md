@@ -5,7 +5,7 @@
 
 I start with some scanning 
 
-![image.png](attachment:e39e487d-e462-4549-86f1-8021f63fdda8:image.png)
+<img width="928" height="249" alt="image" src="https://github.com/user-attachments/assets/abc0ca34-0c2a-4a49-beb9-791f90d3e37d" />
 
 and the answer is `2`
 
