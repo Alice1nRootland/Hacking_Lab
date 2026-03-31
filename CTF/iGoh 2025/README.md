@@ -1,17 +1,16 @@
-# 🚩 IGOH 2025 Writeup — Team ByteBandits
+#IGOH 2025 Writeup — Team ByteBandits
 
 Greetings! This repository contains the writeups and solutions for the **International Game of Hackers (IGOH) 2025** Capture The Flag (CTF) competition. 
 
 On 21 November 2025, I competed alongside my talented teammates, **Kauthar Gani** and **Alif Hakimi Noor Azam**, representing **Team ByteBandits**.
 
-## 🏆 Achievement
+## Achievement
 * **Finalist:** Qualified for the Grand Finals.
 * **Ranking:** Finished in the **Top 25** globally.
 
 ---
----
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 .
