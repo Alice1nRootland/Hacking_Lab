@@ -79,9 +79,8 @@ if __name__ == "__main__":
         sys.exit(1)
         
     start_race(sys.argv[1])
-
-
-                            
+                                 
+                                 
 
 <img width="781" height="170" alt="image" src="https://github.com/user-attachments/assets/78f203f4-a277-47d7-80dc-3fb02d493234" />
 
