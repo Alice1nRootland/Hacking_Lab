@@ -40,7 +40,7 @@ whoami
 
 **Answer Q3:** www-data
 
-![image.png](attachment:ba927c23-1165-4d2a-b201-08cc3bf94142:image.png)
+<img width="891" height="57" alt="image" src="https://github.com/user-attachments/assets/f68a817d-a77b-4db9-bc4b-9ba4448dad9b" />
 
 ## User Flag
 
