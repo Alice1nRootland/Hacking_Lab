@@ -60,7 +60,7 @@ e5146d5f81cdb2c9c1ee024cd92b692e
 
 **Answer Q4:** `e5146d5f81cdb2c9c1ee024cd92b692e`
 
-<img width="891" height="57" alt="image" src="https://github.com/user-attachments/assets/cf02827c-b446-443c-abed-4b9ce1091786" />
+<img width="1523" height="297" alt="image" src="https://github.com/user-attachments/assets/b861772d-7c66-442f-827c-c20cc7091445" />
 
 ## Privilege Escalation (to scriptmanager)
 
