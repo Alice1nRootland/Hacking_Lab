@@ -1,4 +1,6 @@
 <img width="499" height="360" alt="image" src="https://github.com/user-attachments/assets/59981f0c-c833-41bc-9666-9098172dccd9" />
+
+
 ## Step 1 — Initial Analysis
 
 We were given a PHP file `scr7.php`:
