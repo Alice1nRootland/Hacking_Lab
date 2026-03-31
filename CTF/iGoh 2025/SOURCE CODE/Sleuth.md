@@ -1,4 +1,6 @@
 <img width="458" height="372" alt="image" src="https://github.com/user-attachments/assets/94c17c41-4935-47d2-9e2e-38f369b4ca9f" />
+
+
 ### 1. Source Code Review and Vulnerable Route Discovery
 
 The challenge provided the source code in a file named `src1.zip`. The first step was to examine the code to look for routes or functions that handle sensitive data or have weak security checks.
