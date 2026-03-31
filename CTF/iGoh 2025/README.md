@@ -1,4 +1,4 @@
-#IGOH 2025 Writeup — Team ByteBandits
+##IGOH 2025 Writeup — Team ByteBandits
 
 Greetings! This repository contains the writeups and solutions for the **International Game of Hackers (IGOH) 2025** Capture The Flag (CTF) competition. 
 
