@@ -80,7 +80,7 @@ Bash
 
 `xxd -g 1 chall | grep -i -A 3 "3f 70 bd c8"`
 
-![image.png](attachment:6d526dbd-fe6a-4e73-8cb4-953195dba502:image.png)
+<img width="1410" height="124" alt="image" src="https://github.com/user-attachments/assets/45460ba9-8fff-4ec5-9553-27d0b8debadf" />
 
 **Extracted Data (48 bytes):**
 
