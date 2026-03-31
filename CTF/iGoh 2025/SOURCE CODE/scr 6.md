@@ -91,7 +91,7 @@ Now compute the MD5:
 echo -n "commandinjection" | md5sum
 ```
 
-![image.png](attachment:eee7745e-81a9-48ce-9411-684c33da5d9d:image.png)
+<img width="792" height="65" alt="image" src="https://github.com/user-attachments/assets/98436b3f-d056-43f4-8378-a746c5d28548" />
 
 Output:
 
