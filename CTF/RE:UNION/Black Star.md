@@ -11,7 +11,7 @@
 
 ### The Main Logic (`sub_8049120`)
 
-<img width="1410" height="124" alt="image" src="https://github.com/user-attachments/assets/412da4e6-aa25-49cf-9db3-319e6333fb72" />
+<img width="1547" height="566" alt="image" src="https://github.com/user-attachments/assets/09a5bd6d-47dd-429b-9b80-86e92bef9289" />
 
 We start by analyzing the main function. The logic flows as follows:
 
