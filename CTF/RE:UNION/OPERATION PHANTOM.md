@@ -140,3 +140,6 @@ c0rr3l4t10n_1s_k3y_t0_f0r3ns1cs
 ### Optional hash verification
 
 SHA1:
+```
+6dab44b1c788cbc90047abf48e36da4aa8431379
+```
