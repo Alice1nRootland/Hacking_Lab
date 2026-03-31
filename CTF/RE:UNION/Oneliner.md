@@ -103,6 +103,9 @@ print(flag_bytes.decode())
 
 ---
 
-## 🏁 Final Output
+## Final Output
 
 Running the script gives:
+```
+RE:CTF{GCD_70_tH3_Re5Cu3!!}
+```
