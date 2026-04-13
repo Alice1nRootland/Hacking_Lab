@@ -1,4 +1,6 @@
 <img width="907" height="568" alt="image" src="https://github.com/user-attachments/assets/8869cd4e-cace-4073-bb0f-9d68f44bea03" />
+
+
 # CTF Writeup: Mr. Robot VM
 
 **Target IP:** `10.48.134.207`
