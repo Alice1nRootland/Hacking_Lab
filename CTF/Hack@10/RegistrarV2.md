@@ -1,4 +1,4 @@
-# **ack10-Registrar-V2**
+# **Hack10-Registrar-V2**
 
 ## **Executive Summary**
 
