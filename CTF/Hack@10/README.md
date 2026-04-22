@@ -14,10 +14,10 @@ This repository contains the technical write-ups and thought processes for the c
 - **Finalist Status:** Secured a spot in the Top 20 for the Final Round.
 - **Technical Growth:** Gained deep insights into advanced security domains and identified key areas for future specialization.
 
-## Team: [whoami]
-- **Faez Nazari**
-- **Anis Daniyah**
-- **[Your Name/Handle]**
+## Team: whoami
+- **Faez Nazari (UTeM)**
+- **Anis Daniyah (UIA)**
+- **Intan Syuha (MMU)**
 
 ## Acknowledgments
 Special thanks to the **UNITEN Hack@10 Committee**, **CLICQ DIVIDE**, and the lecturers at **Multimedia University (MMU)** for their support throughout this journey.
