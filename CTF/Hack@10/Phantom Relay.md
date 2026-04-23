@@ -1,10 +1,10 @@
 # **Phantom Relay CTF Writeup**
 
-![image.png](attachment:be4befec-9045-4f86-b7aa-d7fc410026d5:image.png)
+<img width="505" height="895" alt="image" src="https://github.com/user-attachments/assets/ac5c0d1a-4007-43b8-a723-1b722cc8cb78" />
 
 **the challenge to solve this were using Ai like gemini and antigravity google that has auto Ai doing the challenge as well**
 
-![image.png](attachment:dd1c804c-6aaf-42cc-b288-445eb14a602c:image.png)
+<img width="534" height="303" alt="image" src="https://github.com/user-attachments/assets/a1dc4746-82bd-455d-bae3-ec46a326bb1b" />
 
 ## **TL;DR**
 
