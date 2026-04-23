@@ -14,6 +14,8 @@ This repository contains the technical write-ups and thought processes for the c
 - **Finalist Status:** Secured a spot in the Top 20 for the Final Round.
 - **Technical Growth:** Gained deep insights into advanced security domains and identified key areas for future specialization.
 
+<img width="1338" height="883" alt="image" src="https://github.com/user-attachments/assets/b2e86016-d437-433e-9e5f-5da1f2af1af2" />
+
 ## Team: whoami
 - **Faez Nazari (UTeM)**
 - **Anis Daniyah (UIA)**
