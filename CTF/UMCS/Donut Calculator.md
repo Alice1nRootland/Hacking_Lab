@@ -8,7 +8,7 @@ The challenge provided a file named `calculator.exe`. Preliminary analysis sugge
 
 I used the `donut-decryptor` tool to peel back the first layer of obfuscation. The tool successfully identified a Donut instance at `0x2e25` and extracted the underlying PE file.
 
-![image.png](attachment:3d84c3d2-0809-4ca6-aeec-5491c536170b:image.png)
+<img width="1223" height="350" alt="image" src="https://github.com/user-attachments/assets/892cc18c-c295-43e0-a090-2bbbf9539887" />
 
 **Result:** Generated `mod_calculator.exe`
 
