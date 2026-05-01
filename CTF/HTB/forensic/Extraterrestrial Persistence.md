@@ -10,7 +10,7 @@ just saw base64 then right away i try to decode it
 echo "W1VuaXRdCkRlc2NyaXB0aW9uPUhUQnt0aDNzM180bDEzblNfNHIzX3MwMDAwMF9iNHMxY30KQWZ0ZXI9bmV0d29yay50YXJnZXQgbmV0d29yay1vbmxpbmUudGFyZ2V0CgpbU2VydmljZV0KVHlwZT1vbmVzaG90ClJlbWFpbkFmdGVyRXhpdD15ZXMKCkV4ZWNTdGFydD0vdXNyL2xvY2FsL2Jpbi9zZXJ2aWNlCkV4ZWNTdG9wPS91c3IvbG9jYWwvYmluL3NlcnZpY2UKCltJbnN0YWxsXQpXYW50ZWRCeT1tdWx0aS11c2VyLnRhcmdldA==" | base64 -d
 ```
 
-![image.png](attachment:e5b52e18-a63d-4eda-b6e8-c82196a28224:image.png)
+<img width="1344" height="302" alt="image" src="https://github.com/user-attachments/assets/a28d00d7-5f50-458f-9399-9848d822b74e" />
 
 right away got the flag
 
