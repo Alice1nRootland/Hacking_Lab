@@ -1,4 +1,4 @@
-# 🔍 HTB Forensics Writeups
+# HTB Forensics Writeups
 
 This repository contains my personal writeups for **Hack The Box Forensics challenges**.  
 Each writeup is focused on **step-by-step analysis**, with commands, explanations, and screenshots where possible.  
