@@ -1,4 +1,4 @@
-<img width="1766" height="775" alt="image" src="https://github.com/user-attachments/assets/a0b93cf8-a84b-43b9-a873-0ad2b62b02d4" /><img width="702" height="647" alt="image" src="https://github.com/user-attachments/assets/47b06c2f-b8de-4f62-945a-8a08f6ea0549" />
+<img width="702" height="647" alt="image" src="https://github.com/user-attachments/assets/47b06c2f-b8de-4f62-945a-8a08f6ea0549" />
 
 # Writeup Automation
 
