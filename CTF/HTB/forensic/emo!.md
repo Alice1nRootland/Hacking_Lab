@@ -4,7 +4,7 @@
 
 We began by analyzing the provided file to confirm its type. Running the `file` command revealed it was an older Microsoft Office format:
 
-![image.png](attachment:c1a854cb-a821-461b-b695-ef83277d5bca:image.png)
+<img width="1338" height="98" alt="image" src="https://github.com/user-attachments/assets/280c05d1-d5e4-4b9d-a662-7940886d47db" />
 
 Knowing this is an OLE2 document, it's highly likely the malicious payload is hidden within embedded VBA macros.
 ****
