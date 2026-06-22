@@ -123,9 +123,7 @@ imm32 = [
 
 The scoreboard reorders and outputs the values as:
 
-$$
 \text{output}[\text{lane}] = (\text{ImageBase\_Key} \oplus imm32[\text{lane}])
-$$
 
 Since the flag starts with `"HNYX"`, the first block must decode to `"HNYX"` (little endian: `0x58594e48`). Aligning the first block with lane 1 yielded the global XOR key `0xffffffff`.
 
