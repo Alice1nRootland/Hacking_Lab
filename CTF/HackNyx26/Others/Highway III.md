@@ -8,7 +8,7 @@ if you go to the coordinate it wil bring you near that place
 
 after found the same prop 
 
-![Uploading image.png…]()
+<img width="1902" height="672" alt="image" src="https://github.com/user-attachments/assets/8bf6c309-e199-468a-99db-9daac1aead04" />
 
 copy the link and gemini will make a format for you
 
