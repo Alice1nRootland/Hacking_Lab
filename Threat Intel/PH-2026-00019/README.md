@@ -1,8 +1,10 @@
 # PH-2026-00019 — E-Wallet Reward-to-Login Investigation
 
-> **PUBLICATION REVIEW DRAFT — NOT YET PUBLISHED**  
-> Case source: Rectifyq PhishHunt public TLP:CLEAR feed · Case state: **Reported** · Reviewed: 13 October 2026  
-> Target alias: **Slate E-Wallet** · Sector: E-wallet · Takedown: **Not confirmed**
+> **Public Threat Intelligence Case Study**
+> Case source: Rectifyq PhishHunt public TLP:CLEAR feed
+> Case state: **Reported** · Reviewed: 13 October 2026
+> Target alias: **Slate E-Wallet** · Takedown: **Not confirmed**
+
 
 ## Executive summary
 
