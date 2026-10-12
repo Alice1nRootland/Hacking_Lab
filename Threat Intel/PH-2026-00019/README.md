@@ -22,15 +22,28 @@ PhishHunt recorded validation and the case stage **Reported**; that is a platfor
 
 ### Landing page / impersonation indicators
 
-The saved Lookyloo screenshot depicts a blue gift/envelope interface, a Touch 'n Go-style logo, the title “Touch 'n Go Rewards,” and the “Buka Sekarang” button. This supports an impersonation concern; no authorization by the legitimate brand has been established. See `evidence/02-lookyloo-landing.png`.
+The saved Lookyloo screenshot depicts a blue gift/envelope interface, a Touch 'n Go-style logo, the title “Touch 'n Go Rewards,” and the “Buka Sekarang” button. This supports an impersonation concern; no authorization by the legitimate brand has been established. The captured screenshot is shown below.
+
+<img width="1920" height="1080" alt="02-lookyloo-landing png" src="https://github.com/user-attachments/assets/60416003-6184-42f3-a7f6-ce7487034edf" />
+
+
+*Evidence 02 — existing Lookyloo screenshot; not a new visit to the site.*
 
 ### Random reward mechanism
 
-The captured HTML implements `generateRandomAmount()` with `min = 5.00`, `max = 99.99`, and `Math.random()`; clicking `openBtn` replaces `saldoAmount` and changes which page section is visible. This amount is client-generated, **not a verified wallet balance**. See `evidence/04-html-random-reward.png` and the preserved source file.
+The captured HTML implements `generateRandomAmount()` with `min = 5.00`, `max = 99.99`, and `Math.random()`; clicking `openBtn` replaces `saldoAmount` and changes which page section is visible. This amount is client-generated, **not a verified wallet balance**. The preserved source excerpt is shown below.
+
+<img width="683" height="152" alt="04-html-random-reward" src="https://github.com/user-attachments/assets/f40ecca1-fbfe-47b9-9ffe-9ab8b7b351d8" />
+
+*Evidence 04 — static JavaScript in saved rendered HTML. The complete source is preserved in `evidence/lookyloo-rendered-content.txt`.*
 
 ### Second-stage link
 
-The captured HTML includes `<a href="login.php" class="btn btn-yellow">Lihat Butiran</a>`. Because this is a **relative path**, it refers to a page under the captured site's URL context, but its response and behavior remain unknown. No claim of credential collection or data exfiltration is made. See `evidence/03-html-login-link.png`.
+The captured HTML includes `<a href="login.php" class="btn btn-yellow">Lihat Butiran</a>`. Because this is a **relative path**, it refers to a page under the captured site's URL context, but its response and behavior remain unknown. No claim of credential collection or data exfiltration is made. The captured source excerpt is shown below.
+
+<img width="547" height="63" alt="03-html-login-link" src="https://github.com/user-attachments/assets/5f488c61-b1c0-4baf-a2d0-af3ab8be6bfa" />
+
+*Evidence 03 — the relative login link; destination content not examined.*
 
 ### Existing Lookyloo capture observations
 
@@ -64,6 +77,18 @@ PhishHunt grouped this case within a “Slate E-Wallet” cluster (three cases s
 | Hosting abuse | Email addressed to `abuse@as.net.id` sent (earlier Gmail review: 9 Oct 2026) | No external acknowledgement or ticket reference verified |
 | Registrar | ResellerCamp form displayed “Terima Kasih, Laporan Abuse berhasil dikirim.” (13 Oct review) | No external ticket reference or remediation confirmed |
 | Netcraft | Initial report submitted 9 Oct 2026; URL displayed **no threats found**; issue-report confirmation visible | No revised classification or blocking confirmed |
+
+### Netcraft classification screenshot
+
+<img width="1457" height="502" alt="05-netcraft-classification" src="https://github.com/user-attachments/assets/202c8958-6ffa-4f57-978e-f8c3b7c67a82" />
+
+*Evidence 05 — Netcraft displayed verdict and last-update time.*
+
+### Hosting abuse email screenshot
+
+<img width="1187" height="670" alt="08-hosting-report" src="https://github.com/user-attachments/assets/4f96d30c-9d98-4beb-9652-09642bf4ac04" />
+
+*Evidence 08 — sent email content; the screenshot alone does not show an external acknowledgement or a readable sent timestamp.*
 
 **Netcraft issue timestamp note:** Submission page displayed “An issue with this submission was reported at 17:10 on 12/10/2026.” Preserve that exact displayed timestamp; do not reconcile it by assumption with the date on which the investigator observed the page.
 
