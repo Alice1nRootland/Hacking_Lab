@@ -69,7 +69,7 @@ PhishHunt's Pendeta checks reported the site **dead**, with **four consecutive d
 
 The case also displayed **dead** in its latest liveness summary. The saved screenshot documents the platform outcome.
 
-![PhishHunt case PH-2026-00029 showing completed takedown status](evidence/phishhunt-takedown-confirmed.png)
+<img width="1146" height="342" alt="phishhunt-takedown-confirmed" src="https://github.com/user-attachments/assets/905b3893-1525-4daf-8c11-5c0c831f6213" />
 
 **Important distinction:** “Taken down” is the **platform's confirmed case status** based on its monitoring. The available evidence does not establish whether a registrar, origin host, Cloudflare, site operator, or another party caused the page to become inaccessible. Availability could change; the platform indicates the case may reopen if the page returns.
 
