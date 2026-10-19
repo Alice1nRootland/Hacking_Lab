@@ -2,7 +2,7 @@
 
 > **Public Threat Intelligence Case Study**  
 > Case source: Rectifyq PhishHunt public TLP:CLEAR feed  
-> Case state: **Reported** · Updated: 14 October 2026  
+> Case state: **Reported** · Report updated: 19 October 2026  
 > Target alias: **Slate E-Wallet** · Provider-reported suspension: **14 October 2026**  
 > PhishHunt-confirmed takedown: **Not confirmed**
 
