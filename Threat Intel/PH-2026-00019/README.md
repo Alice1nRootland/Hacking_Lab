@@ -151,6 +151,93 @@ PhishHunt indicates that two dead results at least 24 hours apart are required f
 
 **Assessment:** The reported phishing lure appears disrupted in the supplied observation, but a PhishHunt-confirmed takedown has not been established.
 
+## MITRE ATT&CK Mapping and Attack Flow Analysis
+
+### 1. MITRE ATT&CK Assessment
+
+The investigation identified an e-wallet reward-themed phishing page that used a dynamically generated reward amount and a call-to-action linking to `login.php`.
+
+The MITRE ATT&CK framework is used here to contextualize the observed behavior and possible attacker objectives. Mappings are qualified according to the available evidence rather than presented as confirmed techniques without supporting observations.
+
+| MITRE ATT&CK | Technique / Tactic | Evidence Assessment |
+|---|---|---|
+| [T1566](https://attack.mitre.org/techniques/T1566/) | Phishing — Initial Access | Relevant contextual mapping for the PhishHunt-validated phishing case. The original delivery channel was not independently observed. |
+| [T1566.002](https://attack.mitre.org/techniques/T1566/002/) | Spearphishing Link | Not confirmed. No email, direct message, or other spearphishing delivery artifact was captured. |
+| Credential Access | Possible downstream objective | Unverified. The HTML linked to `login.php`, but the destination's functionality and any credential collection were not established. |
+
+**Analyst assessment:** The observed page is consistent with a reward-themed social engineering lure designed to encourage further user interaction. The presence of a login-related URL is not sufficient to establish credential harvesting, successful compromise, or data exfiltration.
+
+### 2. Observed Attack Flow
+
+The following diagram reconstructs the sequence visible in the historical evidence. It does not represent a complete victim session.
+
+```mermaid
+flowchart TD
+    A["Suspected phishing URL"] --> B["E-wallet reward-themed landing page"]
+    B --> C["JavaScript generates RM5–RM99.99 reward"]
+    C --> D["Lihat Butiran call-to-action"]
+    D --> E["HTML link targets login.php"]
+    E -. "Not independently examined" .-> F["Unknown downstream behavior"]
+
+    classDef observed fill:#dcfce7,stroke:#15803d,color:#14532d
+    classDef unknown fill:#fef3c7,stroke:#b45309,color:#78350f
+
+    class A,B,C,D,E observed
+    class F unknown
+```
+
+**Evidence interpretation:**
+
+- **Observed:** The reward-themed landing page and its JavaScript-generated reward values.
+- **Observed:** The `Lihat Butiran` link targeting `login.php`.
+- **Not verified:** Login form behavior, credential or OTP collection, exfiltration, or victim interaction.
+
+### 3. Infrastructure and Reporting Relationships
+
+```mermaid
+flowchart TD
+    A["touncngo.reward5.my.id"] --> B["reward5.my.id"]
+    B --> C["Historical IP: 202.73.25.122"]
+    C --> D["AS141892 / Indonesia"]
+
+    B -. "Registrar reporting" .-> E["ResellerCamp"]
+    C -. "Hosting abuse reporting" .-> F["Hosting provider"]
+
+    E --> G["Registrar-reported domain suspension"]
+    F -. "Observed hosting response" .-> H["HyperCloudHost suspension page"]
+
+    G --> I["PhishHunt monitoring"]
+    H --> I
+    I --> J["Platform-confirmed takedown pending"]
+
+    classDef infra fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef report fill:#dcfce7,stroke:#15803d,color:#14532d
+    classDef pending fill:#fef3c7,stroke:#b45309,color:#78350f
+
+    class A,B,C,D infra
+    class E,F,G,H report
+    class I,J pending
+```
+
+The infrastructure relationships reflect historical observations and provider information. They do not establish the identity of the operator or prove that any particular abuse report caused the suspension.
+
+### 4. Outcome and Visibility Limitations
+
+On 14 October 2026, the registrar reported that the domain had been suspended. A separate screenshot showed a hosting suspension notice replacing the previously observed reward page.
+
+These findings support a **provider-reported suspension and an observed content change**, not a confirmed permanent takedown.
+
+At the last documented PhishHunt check, the case remained in the **Reported** lifecycle stage, with no platform-confirmed takedown. Its latest status must be verified directly in PhishHunt before updating this conclusion.
+
+### References
+
+- [MITRE ATT&CK — Phishing (T1566)](https://attack.mitre.org/techniques/T1566/)
+- [MITRE ATT&CK — Spearphishing Link (T1566.002)](https://attack.mitre.org/techniques/T1566/002/)
+- [Rectifyq — PhishHuntMY Challenge](https://rectifyq.com/my-threat-landscape/phishhuntmy)
+- [Historical Lookyloo capture](https://lookyloo.circl.lu/tree/a2bb8615-b509-42ad-9d11-44a4f669cc54)
+- [Historical urlscan result](https://urlscan.io/result/01a11f05-cb93-72f8-8259-5695d0c4e929/)
+
+
 ## Abuse reporting and investigation outcome
 
 The investigation included reports to the registrar, hosting infrastructure contact and Netcraft.
