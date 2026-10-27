@@ -1,6 +1,6 @@
 # PH-2026-00920 — E-Wallet Reward-Themed Phishing Investigation
 
-> **Publication status:** Draft — public release requires confirmation of case-specific sharing permissions and evidence review.  
+> **Documentation status:** Public case-study draft; case-specific disclosure permission for platform records remains subject to PhishHunt sharing controls.  
 > **Platform:** Rectifyq PhishHunt · **Investigator:** Cyber_Aliceee  
 > **Case lifecycle:** Down — PhishHunt confirmed 27 October 2026, 20:03:02 (platform-displayed time).  
 > **Observed URL (defanged):** `hxxps://touch-n-go14[.]ewallet-24[.]click/`
@@ -19,7 +19,7 @@ Netcraft's automated analysis classified the URL as **“No threats found”** o
 
 The investigation used PhishHunt case records, historic urlscan results, passive domain/DNS/certificate enrichment, and actual abuse-provider replies. The suspicious URL was not opened directly on an investigator's personal computer, and no login, OTP, or other suspected collection flow was tested.
 
-Sources were classified as (1) platform records, (2) independent passive captures, (3) provider correspondence, and (4) analyst assessment. Screenshots of provider emails should be kept privately unless explicitly authorized and fully redacted.
+Sources were classified as (1) platform records, (2) independent passive captures, (3) provider correspondence, and (4) analyst assessment. Provider correspondence is retained privately. The public document includes only the minimal provider-response facts needed to substantiate the reported outcome.
 
 ## Visual and technical evidence
 
@@ -32,7 +32,7 @@ Sources were classified as (1) platform records, (2) independent passive capture
 
 ### Figure 1 — Historical phishing landing page
 
-![Historical urlscan landing page — upload screenshot and replace this placeholder](https://github.com/user-attachments/assets/9b316c38-bbb1-49c3-ace5-17c2d00028ab)
+![Historical urlscan capture of the reward-themed landing page](https://github.com/user-attachments/assets/9b316c38-bbb1-49c3-ace5-17c2d00028ab)
 
 *Figure 1. urlscan capture from 24 October 2026 showing the reward-themed page, brand imagery, and the title “A surprise Money Packet for you!”. This historical capture does not prove credential exfiltration.*
 
@@ -63,17 +63,16 @@ PhishHunt linked this case to **“Slate E-Wallet · same kit”** (two-case sus
 | Google Safe Browsing | Official form indicated successful submission; no ticket or confirmed block classification. | Submission confirmation |
 | Contabo | Direct follow-up abuse email sent after Cloudflare identified it as hosting provider; no acknowledgement or ticket yet recorded. | Investigator-sent email |
 
-### Figure 2 — NameSilo suspension confirmation
+### NameSilo suspension confirmation — private evidence
 
-![NameSilo Abuse Team suspension confirmation — upload redacted screenshot and replace this placeholder](https://github.com/user-attachments/assets/a9b06fc7-ee8c-4950-bd0f-9899389b46a0)
+**Provider correspondence retained privately.** NameSilo confirmed by email on 26 October 2026 that the reported abusive domain had been suspended; the original message is withheld from this public case study to avoid exposing private correspondence.
 
-*Figure 2. NameSilo Abuse Team's 26 October 2026 email confirming suspension of the reported abusive domain. The message did not supply a ticket reference.*
 
-### Figure 3 — Netcraft classification disagreement
+### Figure 2 — Netcraft classification disagreement
 
-![Netcraft no-threats classification — upload screenshot and replace this placeholder](https://github.com/user-attachments/assets/d32dea8a-57df-48c8-bf1f-a9ebd9673712)
+![Netcraft automated classification showing no threats found](https://github.com/user-attachments/assets/d32dea8a-57df-48c8-bf1f-a9ebd9673712)
 
-*Figure 3. Netcraft's automated “No threats found” verdict. A reconsideration request was subsequently recorded; no revised classification has been confirmed.*
+*Figure 2. Netcraft's automated “No threats found” verdict. A reconsideration request was subsequently recorded; no revised classification has been confirmed.*
 
 PhishHunt's Report tab counted **four** reports; the direct Contabo email was documented separately and must not be represented as a fifth platform-recorded entry. Cloudflare's access restriction was **not** equivalent to registrar suspension, and the Netcraft classification was **not** a confirmed block.
 
@@ -83,11 +82,11 @@ PhishHunt Pendeta's tier-1 DNS/RDAP monitoring first recorded non-live status on
 
 The available evidence establishes the observed down state and provider-reported actions, not perpetual unavailability or exclusive responsibility for the result.
 
-### Figure 4 — PhishHunt takedown confirmation
+### Figure 3 — PhishHunt takedown confirmation
 
-![PhishHunt down status — upload screenshot and replace this placeholder](https://github.com/user-attachments/assets/9d2c8cd0-549c-4181-89e9-ce3c213bc0fc)
+![PhishHunt case displaying down status and completed takedown milestone](https://github.com/user-attachments/assets/9d2c8cd0-549c-4181-89e9-ce3c213bc0fc)
 
-*Figure 4. PhishHunt case header showing `down` and the completed “Taken down” milestone on 27 October 2026. The Recheck tab independently records NXDOMAIN as the reason for the down state.*
+*Figure 3. PhishHunt case header showing `down` and the completed “Taken down” milestone on 27 October 2026. The Recheck tab independently records NXDOMAIN as the reason for the down state.*
 
 ## Conclusions and lessons learned
 
@@ -106,4 +105,4 @@ The available evidence establishes the observed down state and provider-reported
 - [Netcraft submission and classification](https://report.netcraft.com/submission/8e3mHxY3BEj4gs8JTw10srn95AhnqjSa)
 - [IOCs.md](IOCs.md) · [TIMELINE.md](TIMELINE.md)
 
-> **Sharing review:** The PhishHunt Guide says only validated **TLP:CLEAR** cases enter its public feed and that **TLP:GREEN** remains inside PhishHunt. The case header showed `tlp:clear?` and `PAP:AMBER?`; these ambiguous labels and a reported implementation limitation do not by themselves constitute authorization to republish private case data. Keep this draft private until case-specific disclosure authority and screenshot rights are verified.
+> **Sharing note:** The PhishHunt case header displayed `tlp:clear` and `PAP:AMBER` when reviewed. The publication of this summary is not a claim of independent authorization for all case attachments or private correspondence. Provider emails and restricted records are excluded; recheck case-specific sharing controls before further redistribution.
